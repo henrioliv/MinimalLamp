@@ -10,14 +10,14 @@ void loop() {
       Serial.println(animation_mode);
     }
     if (msg == 'w') {
-      Serial.println("Mode Up");
+      Serial.println("Animation Up");
       animation_mode = animation_modes(animation_mode + 1);
       if (animation_mode >= number_of_modes) {
         animation_mode = animation_modes(1);
       }
     }
     if (msg == 's') {
-      Serial.println("Mode Down");
+      Serial.println("Animation Down");
       animation_mode  = animation_modes(animation_mode - 1);
       if (animation_mode <= 0) {
         animation_mode = animation_modes(number_of_modes - 1);
