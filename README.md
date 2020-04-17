@@ -15,7 +15,7 @@
  This file contains all the pallets of the code. A pallet, in order to be used, needs to be declared on the enum palletes_mode on the **MinimalLamp.ino** file. Once the pallet is declared, it will accesible by the main Serial menu. Don't forget to update the *number_of_palletes*
  
 ### RGB_animations.ino 
-This file contains all the animations performed in the RGB color space. The animations use the colors described in the selected pallet. A new animation, in order to be available on the Serial menu, it needs to be declared on the enum *animation_modes* on the **MinimalLamp.ino** file.
+This file contains all the animations performed in the RGB color space. The animations use the colors described in the selected pallet. A new animation, in order to be available on the Serial menu, it needs to be declared on the enum *animation_modes* on the **MinimalLamp.ino** file. Don't forget to update the *number_of_modes*
 
 ### HSV_animations.ino 
 This tab still has to adapted to be accesible via the Serial menu. It is basically the examples available on the **Adafruit_NeoPixel** library. 
