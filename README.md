@@ -18,7 +18,7 @@ _This text_ is in italic
 <!-- Strong--> 
 **This text** is in strong
 
-__This __text is in strong
+__This text__ is in strong
 
 <!-- Strikethrough-->
 
@@ -71,6 +71,6 @@ ___
 | Joe  | j@gma |
 
 <!-- Task Lists --> 
-*[x] Task 1 done 
-*[x] Task 2 done 
-*[x] Task 3 done 
+* [x] Task 1 done 
+* [x] Task 2 done 
+* [x] Task 3 done 
