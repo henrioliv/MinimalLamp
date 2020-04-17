@@ -56,11 +56,15 @@ One of the main characteristics desired for this project is that it needs to hav
 Some notes: 
 
 **Be careful**, since depending on the amount of LEDs, the drained current might exceed the maximum rated for your USB port, thus leading to *magic smoke*
-Remember to commonize the ground of your external power supply with the USB ground. The USB ground will be available on any Arduino ground pi
+Remember to commonize the ground of your external power supply with the USB ground. The USB ground will be available on any Arduino ground pin.
+
 Use the defines *LED_PIN* and *LED_COUNT* accordingly to your setup. Basically any Arduino pin might be used. Update the type of your LED accordingly to the Adafruit_NeoPixel library 
+
 A 330 ohms resistor in-between the arduino data pin and the beginning of the LED strip helps to reduce peak current damage to the first LED 
+
 It is advisable to use a large capacitor between the VCC and ground of your suplply, as close as possible to LEDs, for a smooth operation. 
-If your LED strip is very long, consider supplying energy at more than one point. 
+
+If your LED strip is very long, consider supplying energy at more than one point. 	
 
 
 
