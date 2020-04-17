@@ -43,3 +43,14 @@ This tab contains the main loop function of the arduino. It basically contains t
 * m to increase the brightness of the LED lamp 
 * z to display the current configuration on the Serial interface 
 * x to show this help
+
+The tab is named as z_\* because the Arduino needs to reach this tab at the end so that all variables were declared before its compilation. 
+
+## Next steps 
+
+The roadmap for new features for this projects are:
+* [ ] Create animations using the HSV color space 
+* [ ] Add static or low speed animations 
+* [ ] Add another form of communication (bluetooth, wifi, etc) for final implementation
+* [ ] Add more colors 
+* [ ] Improve code performance, ie, reduce memory usage at maximum 
