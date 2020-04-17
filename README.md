@@ -46,6 +46,20 @@ This tab contains the main loop function of the arduino. It basically contains t
 
 The tab is named as z_\* because the Arduino needs to reach this tab at the end so that all variables were declared before its compilation. 
 
+## Hardware 
+
+One of the main characteristics desired for this project is that it needs to have a simple configuration regarding the hardware. The hardware used on this project were: 
+* A simple Arduino Nano (ATMega 328P)
+* WS2812 LEDs with update frequency of 800 KHz 
+* An old smartphone power supply. 
+
+Some notes: 
+**Be careful**, since depending on the amount of LEDs, the drained current might exceed the maximum rated for your USB port, thus leading to *magic smoke*
+Remember to commonize the ground of your external power supply with the USB ground. The USB ground will be available on any Arduino ground pin
+
+Use the defines LED_PIN and LED_COUNT accordingly to your setup. Basically any Arduino pin might be used. Update the type of your LED accordingly to the Adafruit_NeoPixel library 
+
+
 ## Next steps 
 
 The roadmap for new features for this projects are:
@@ -54,3 +68,4 @@ The roadmap for new features for this projects are:
 * [ ] Add another form of communication (bluetooth, wifi, etc) for final implementation
 * [ ] Add more colors 
 * [ ] Improve code performance, ie, reduce memory usage at maximum 
+* [ ] Add video and images of the Lamp fucntioning
