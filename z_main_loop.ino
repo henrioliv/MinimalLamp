@@ -46,8 +46,7 @@ void loop() {
       Serial.println("Speed decreased a lot");
       duration += 100;
     }
-
-
+    
     if (msg == 'j') {
       Serial.println("Palette <<");
       palettes_mode = palettes_modes(palettes_mode - 1);

@@ -1,6 +1,6 @@
 #include <Adafruit_NeoPixel.h>
 
-#define LED_PIN    3
+#define LED_PIN    4
 #define LED_COUNT 37
 
 // Declare our NeoPixel strip object:
@@ -23,7 +23,6 @@ int blue = 0;
 //////  MENU SERIAL   //////////
 int msg = 0;
 
-
 //// Animation variables
 
 enum animation_modes {
@@ -35,7 +34,7 @@ enum animation_modes {
   THEATER = 5
 };
 
-typedef enum animation_modes animation_modes;  
+typedef enum animation_modes animation_modes;
 animation_modes animation_mode = OFF;
 uint8_t number_of_modes = 6; // plus off mode
 
@@ -54,10 +53,10 @@ enum palettes_modes {
   BLUE      = 9,
   PURPLE    = 10,
   WHITE     = 11,
-  BLACK     = 12 
+  BLACK     = 12
 };
 
-typedef enum palettes_modes palettes_modes;  
+typedef enum palettes_modes palettes_modes;
 palettes_modes palettes_mode = RETROWAVE;
 uint8_t number_of_palettes = 13; // plus off mode
 int line = 0;  // Pallete line global counter
@@ -69,4 +68,20 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Minimalist Lamp v0\n");
   Serial.println("Press x for help\n");
+
+  Serial.println("Starting the lamp with a random configuration");
+  animation_mode = animation_modes(random(0, number_of_modes));
+  duration = 200;
+  palettes_mode = palettes_modes(random(0, number_of_palettes));
+  Serial.println("\nCurrent setup is\n");
+  Serial.print("Brigthness \t\t");
+  Serial.print(brightness);
+  Serial.println("/255");
+  Serial.print("Update period \t\t");
+  Serial.print(duration);
+  Serial.println(" ms");
+  Serial.print("Selected Pallet \t");
+  Serial.println(palettes_modes(palettes_mode));
+  Serial.print("Selected animation \t");
+  Serial.println(animation_mode);
 }

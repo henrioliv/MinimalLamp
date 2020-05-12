@@ -49,7 +49,7 @@ The tab is named as z_\* because the Arduino needs to reach this tab at the end 
 ## Hardware 
 
 One of the main characteristics desired for this project is that it needs to have a simple configuration regarding the hardware. The hardware used on this project were: 
-* A simple [Arduino Nano (ATMega 328P)](https://store.arduino.cc/usa/arduino-nano "Arduino page")
+* A simple [Arduino Nano (ATMega 328P)](https://store.arduino.cc/usa/arduino-nano "Arduino page") or an ESP 8266. The objective of the ESP is to enable WiFi capabilities that are described in this other branch of the project: (TBD).
 * WS2812 LEDs with update frequency of 800 KHz. I bought my LEDs from this [Aliexpress supplier](https://www.aliexpress.com/item/32682015405.html?spm=a2g0s.9042311.0.0.739a4c4dKD8sVe "Not an affiliate link")
 * An old smartphone power supply 
 
@@ -67,7 +67,7 @@ It is advisable to use a large capacitor between the VCC and ground of your supl
 
 If your LED strip is very long, consider supplying energy at more than one point. 	
 
-
+To use the ESP you need to use the pin 4 on your arduino code. The ESP has a really convoluted way to set pins and their exclusive functionality so check a tutorial somewhere. I used this one [NodeMCU ESP8266: Detalhes e Pinagem](https://www.youtube.com/watch?v=slKGGrPDNpk "Youtube") which is in Portuguese.
 
 
 ## Next steps 
